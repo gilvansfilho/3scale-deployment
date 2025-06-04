@@ -1,0 +1,16 @@
+kind: APIManager
+apiVersion: apps.3scale.net/v1alpha1
+metadata:
+  name: apimanager-sample
+  namespace: 3scale
+spec:
+  externalComponents:
+    backend:
+      redis: false
+    system:
+      database: true
+      redis: false
+    zync:
+      database: true
+  tenantName: nprd
+  wildcardDomain: apps.cluster-7wgrl.7wgrl.sandbox2461.opentlc.com

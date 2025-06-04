@@ -1,0 +1,18 @@
+apiVersion: capabilities.3scale.net/v1alpha1
+kind: Tenant
+metadata:
+  name: apihml
+  namespace: 3scale
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
+spec:
+  email: apihml@hml.com  ##definir antes de criar
+  organizationName: apihml
+  username: admin
+  systemMasterUrl: "http://system-master:3000"
+  masterCredentialsRef:
+    name: system-seed 
+  passwordCredentialsRef: 
+    name: tenant-apihml-admin
+  tenantSecretRef: 
+    name: tenant-apihml
