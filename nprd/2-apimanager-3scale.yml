@@ -15,4 +15,4 @@ spec:
     zync:
       database: true
   tenantName: nprd
-  wildcardDomain: apps.cluster-htbqk.htbqk.sandbox2689.opentlc.com
+  wildcardDomain: apps.cluster-7g8kf.7g8kf.sandbox3207.opentlc.com
