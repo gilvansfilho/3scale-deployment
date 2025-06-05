@@ -3,6 +3,8 @@ apiVersion: apps.3scale.net/v1alpha1
 metadata:
   name: apimanager-sample
   namespace: 3scale
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   externalComponents:
     backend:
@@ -13,4 +15,4 @@ spec:
     zync:
       database: true
   tenantName: nprd
-  wildcardDomain: apps.cluster-7wgrl.7wgrl.sandbox2461.opentlc.com
+  wildcardDomain: apps.cluster-htbqk.htbqk.sandbox2689.opentlc.com
